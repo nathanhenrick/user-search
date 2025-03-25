@@ -33,7 +33,7 @@ onMounted(fetchUsers);
 <style lang="scss" scoped>
 h1 {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   color: #ff324e;
   font-family: "Boldonse", "Quicksand", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -42,14 +42,12 @@ section#usersList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   width: 100%;
-  /* width: clamp(200px, 1200px, 80%); */
-  /* max-width: 80%; */
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0 auto;
 
   .user-button {
-    padding: 0.5rem;
+    padding: 0.25rem;
     font-size: 1.4rem;
     transition: 0.2s ease-in-out;
     overflow: hidden;
