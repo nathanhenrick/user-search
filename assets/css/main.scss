@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Quicksand:wght@300..700&display=swap");
+
+$black: #161616;
+$white: #e4e4e4;
+$red: #cb3145;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::selection {
+    background-color: $red;
+    color: $white;
+  }
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+}
