@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# User Search
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+User Search é uma aplicação desenvolvida com Nuxt 3 que busca e exibe uma lista de usuários da API [JSONPlaceholder](https://jsonplaceholder.typicode.com/users). Cada usuário possui sua própria página de detalhes, exibindo suas informações de forma organizada.  
 
-## Setup
+## Tecnologias Utilizadas
 
-Make sure to install dependencies:
+- **Nuxt 3** – Framework baseado em Vue 3 para SSR/SSG
+- **Vue 3** – Biblioteca para criação de interfaces reativas
+- **SCSS** – Pré-processador CSS para estilização
+- **$fetch** – API nativa do Nuxt 3 para requisições HTTP
 
-```bash
-# npm
-npm install
+## Funcionalidades
 
-# pnpm
-pnpm install
+- **Listagem Responsiva:** Exibe os usuários em uma grade com no máximo 5 itens por linha.
+- **Rotas Dinâmicas:** Cada usuário tem uma página de detalhes (ex: `/users/1`).
 
-# yarn
-yarn install
+## Instalação e Execução
 
-# bun
-bun install
-```
+1. Clone o repositório e instale as dependências:
 
-## Development Server
+   ```bash
+   git clone https://github.com/nathanhenrick/user-search.git
+   cd user-search
+   npm install
+   ```
 
-Start the development server on `http://localhost:3000`:
+2. Inicie o projeto em modo desenvolvimento:
 
-```bash
-# npm
-npm run dev
+   ```bash
+   npm run dev
+   ```
 
-# pnpm
-pnpm dev
+A aplicação estará disponível em [https://user-search-pi.vercel.app].
 
-# yarn
-yarn dev
+## Deploy
 
-# bun
-bun run dev
-```
+O projeto pode ser gerado como site estático (SSG) ou rodado como servidor Node.js (SSR):
 
-## Production
+- **Estático:**  
+  ```bash
+  npm run generate
+  ```
+- **SSR:**  
+  ```bash
+  npm run build
+  npm run start
+  ```
 
-Build the application for production:
+## Autor
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Nathan Henrick Martempe Constantino
